@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Grupos - StrongTogether</title>
+	<link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/principal/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="/css/principal/fonts/fontawesome-all.min.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        {{>nav}}
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-1">Amigos</h3>
+                </div>
+                <table class="table my-0" id="dataTable">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Usuario</th>
+            <th>Correo</th>
+            <th>Edad</th>
+            <th>Inicio</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each usuario}}
+        <tr>
+            <td>{{usuario.nombre}}</td>
+            <td>{{usuario.apellidos}}</td>
+            <td>{{usuario.usuario}}</td>
+            <td>{{usuario.correo}}</td>
+            <td>{{usuario.edad}}</td>
+            <td>{{usuario.fecha_inicio}}</td>
+           
+        </tr>
+        {{/each}}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td><strong>Nombre</strong></td>
+            <td><strong>Apellidos</strong></td>
+            <td><strong>Usuario</strong></td>
+            <td><strong>Correo</strong></td>
+            <td><strong>Edad</strong></td>
+            <td><strong>Inicio</strong></td>
+            <td><strong>Opciones</strong></td>
+        </tr>
+    </tfoot>
+</table>
+            </div>
+{{>footer}}
+        <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    
+    <script src="/js/principal/bootstrap.min.js"></script>
+    <script src="/js/principal/chart.min.js"></script>
+    <script src="/js/principal/bs-init.js"></script>
+    <script src="/js/principal/theme.js"></script>
+    <script src="/js/principal/principal.js"></script>  
+</body>
+
+</html>

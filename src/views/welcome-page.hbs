@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strong Together</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/img/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/css/welcome-page.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="/img/welcome-page/atleta-izq.webp">
+  <link rel="preload" as="image" href="/img/welcome-page/hero-circle-one.png">
+  <link rel="preload" as="image" href="/img/welcome-page/hero-circle-two.png">
+  <link rel="preload" as="image" href="/img/welcome-page/heart-rate.svg">
+  <link rel="preload" as="image" href="/img/welcome-page/calories.svg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="welcome-page" class="logo">
+        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+        <span class="span">StrongTogether</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>Acerca de</a>
+          </li>
+
+          <li>
+            <a href="#contact-us" class="navbar-link" data-nav-link>Contacto</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="iniciar-sesion" class="btn btn-secondary">Iniciar Sesión</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('/img/welcome-page/hero-bg.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">
+              <strong class="strong">The Best</strong>Fitness Club
+            </p>
+
+            <h1 class="h1 hero-title">Trabaja duro para conseguir una vida mejor</h1>
+
+            <p class="section-text">
+             La práctica de algún deporte o actividad física es beneficiosa para la salud, 
+             pero, además de eso, también se trata de una herramienta efectiva en la educación 
+             y en el desarrollo y mejoramiento de las capacidades físicas de una persona, que 
+             facilita la integración de los aspectos social, emocional y físico, indispensables
+             para el bienestar humano.
+            </p>
+
+            <a href="/registro" class="btn btn-primary">Empezar</a>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="/img/welcome-page/atleta-izq.webp" width="660" height="753" alt="hero banner" class="w-100">
+
+            <img src="/img/welcome-page/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-1">
+            <img src="/img/welcome-page/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2">
+
+            <img src="/img/welcome-page/frec-cardiaca.png" width="250" height="100" alt="heart rate"
+              class="abs-img abs-img-1">
+            <img src="/img/welcome-page/calorias.png" width="250" height="100" alt="calories" class="abs-img abs-img-2">
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner has-after">
+            <img src="/img/welcome-page/about-banner.png" width="660" height="648" loading="lazy" alt="about banner"
+              class="w-100">
+
+            <img src="/img/welcome-page/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-1">
+            <img src="/img/welcome-page/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-2">
+
+            <img src="/img/welcome-page/strong-together.png" width="650" height="154" loading="lazy" alt="fitness"
+              class="abs-img w-100">
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Acerca de</p>
+
+            <h2 class="h2 section-title"></h2>
+
+            <p class="section-text">
+              La actividad física también contribuye a prevenir y combatir diversas enfermedades crónicas, como la obesidad, 
+              la diabetes, la hipertensión o el estrés. Al realizar ejercicio regularmente, se fortalece el sistema inmunológico, 
+              se mejora la circulación sanguínea, se regula el metabolismo y se libera endorfinas, que son sustancias que generan 
+              sensación de placer y bienestar.
+            </p>
+
+            <p class="section-text">
+              Así, la actividad física no solo mejora la salud física, sino también la mental y emocional.
+            </p>
+
+            <div class="wrapper">
+
+              <div class="about-coach">
+
+                <figure class="coach-avatar">
+                  <img src="/img/welcome-page/lisset.jpg" width="65" height="65" loading="lazy" alt="Trainer">
+                </figure>
+
+                <div>
+                  <h3 class="h3 coach-name">"Lisset Salazar G."</h3>
+
+                  <p class="coach-title">lsgomez@uci.cu</p>
+                </div>
+
+              </div>
+
+              <a href="iniciar-sesion" class="btn btn-primary">Iniciar Sesión</a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+            <!-- 
+        - #CONTACTO
+      -->
+
+      <section id="contact-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Contacta con nosotros</h2>
+              <p>Por favor complete el siguiente formulario para ponerse en contacto:</p>
+              <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('/img/welcome-page/footer-bg.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+            <span class="foot-span">Strong Together</span>
+          </a>
+
+          <p class="footer-brand-text">
+            Etiam suscipit fringilla ullamcorper sed malesuada urna nec odio.
+          </p>
+
+          <div class="wrapper">
+
+            <img src="/img/welcome-page/footer-clock.png" width="34" height="34" loading="lazy" alt="Clock">
+
+            
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Acerca de</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contacto</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contacto</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              1247/Plot No. 39, 15th Phase, Colony, Kukatpally, Hyderabad
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:18001213637" class="footer-link">1800-121-3637</a>
+
+              <a href="tel:+915552348765" class="footer-link">+91 555 234-8765</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@fitlife.com" class="footer-link">info@fitlife.com</a>
+
+              <a href="mailto:services@fitlife.com" class="footer-link">services@fitlife.com</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+
+          <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required
+                class="input-field">
+
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 StrongTogether. Todos los derechos reservados.
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Terms & Condition</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="/js/welcome-page.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Perfil - StrongTogether</title>
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">	
+    <link rel="stylesheet" href="/css/principal/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="/css/principal/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/css/principal/change-pass.css" > 
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+       {{>nav}}
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4">Perfil</h3>
+                    <div class="row mb-3">
+                        <div class="col-lg-4">
+                            <div class="card mb-3">
+                                <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="/uploads/{{foto}}" width="160" height="160">
+                                    <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Cambiar Foto</button></div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row mb-3 d-none">
+                                <div class="col">
+                                    <div class="card text-white bg-primary shadow">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <p class="m-0">Peformance</p>
+                                                    <p class="m-0"><strong>65.2%</strong></p>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                            </div>
+                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-white bg-success shadow">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <p class="m-0">Peformance</p>
+                                                    <p class="m-0"><strong>65.2%</strong></p>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                            </div>
+                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card shadow mb-3">
+                                        <div class="card-header py-3">
+                                            <p class="text-primary m-0 fw-bold">Modificar perfil</p>
+                                        </div>
+                                        <div class="card-body">
+    <form action="/modificarPerfil" method="post" class="row g-3 needs-validation">
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label class="form-label" for="nombre"><strong>Nombre</strong></label>
+                    <input class="form-control" type="text" id="nombre" placeholder="Ingrese su nombre completo" name="nombre" value={{usuario.nombre}}>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label class="form-label" for="apellidos"><strong>Apellidos</strong></label>
+                    <input class="form-control" type="text" id="apellidos" placeholder="Ingrese sus apellidos completos" name="apellidos" value={{usuario.apellidos}}>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label class="form-label" for="usuario"><strong>Usuario</strong></label>
+                    <input class="form-control" type="text" id="usuario" placeholder="Ingrese su nombre de usuario" name="usuario" value={{usuario.usuario}} >
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label class="form-label" for="correo"><strong>Correo</strong></label>
+                    <input class="form-control" type="email" id="correo" placeholder="Ingrese su correo electrónico" name="correo" value={{usuario.correo}}>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label class="form-label" for="sexo"><strong>Sexo</strong></label>
+                    <select class="form-select" id="sexo" name="sexo" >
+                        <option value="">Seleccione una opción</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="mb-3">
+                    <label class="form-label" for="deporte"><strong>Deporte</strong></label>
+                    <input class="form-control" type="text" id="deporte" placeholder="Ingrese el deporte" name="deporte" value={{usuario.deporte}}>
+                </div>
+            </div>
+        
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label class="form-label" for="fecha_nacimiento"><strong>Fecha de nacimiento</strong></label>
+                    <input class="form-control" type="date" id="fecha_nacimiento" name="fecha_nacimiento" value={{usuario.fecha_nacimiento}}>
+                </div>
+            </div>
+<div class="col">
+    <div class="mb-3">
+        <label class="form-label" for="facultad"><strong>Facultad</strong></label>
+        <select class="form-select" id="facultad" name="facultad" value={{usuario.facultad}}>
+            <option value="">Seleccione una opción</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="FTE">FTE</option>
+            <option value="CITEC">CITEC</option>
+        </select>
+    </div>
+</div>
+        </div>
+
+        <div class="mb-3">
+            <a href="profile" class="btn btn-primary btn-sm">Volver</a>
+            <button class="btn btn-primary btn-sm" type="submit">Modificar</button>
+            
+</div>
+</form>
+
+</div>
+                                    </div>
+                                    <div class="card shadow"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+                
+            </div>
+            
+{{>footer}}
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="/js/principal/bootstrap.min.js"></script>
+    <script src="/js/principal/chart.min.js"></script>
+    <script src="/js/principal/bs-init.js"></script>
+    <script src="/js/principal/theme.js"></script>
+    <script src="/js/principal/principal.js"></script>
+</body>
+
+</html>

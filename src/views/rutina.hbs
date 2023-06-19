@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Rutinas - StrongTogether</title>
+	<link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/principal/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="/css/principal/fonts/fontawesome-all.min.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        {{>nav}}
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-1">Rutina</h3>
+                     <a href="crear-rutina" class="btn btn-primary">Insertar Rutina</a>
+                   
+<h1>Rutina de {{ usuario.nombre }}</h1>
+<div>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th></th>
+        {{#each dias}}
+        <th>{{ this }}</th>
+        {{/each}}
+      </tr>
+    </thead>
+    <tbody>
+      {{#each rows}}
+      <tr>
+        <td>{{ this.opcion }}</td>
+        {{#each dias}}
+        <td>
+          <select class="form-select" {{#unless this.opcion2}}disabled{{/unless}}>
+            <option>{{ this }}</option>
+          </select>
+        </td>
+        {{/each}}
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+<div>
+  <!-- Otra tabla o contenido -->
+</div>
+                </div>
+            </div>
+{{>footer}}
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="/js/principal/bootstrap.min.js"></script>
+    <script src="/js/principal/chart.min.js"></script>
+    <script src="/js/principal/bs-init.js"></script>
+    <script src="/js/principal/theme.js"></script>
+    <script src="/js/principal/principal.js"></script>
+</body>
+
+</html>

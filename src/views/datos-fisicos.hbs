@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Datos Fisicos</title>
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/principal/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="/css/principal/fonts/fontawesome-all.min.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        {{>nav}}
+                <div class="container-fluid">
+                    <section id="resume" class="resume">
+       <h2>Rutina</h2>
+       <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary" onclick="agregarFila()">Agregar fila</button>
+            <button type="button" class="btn btn-success" onclick="guardarCambios()">Guardar cambios</button>
+            <button type="button" class="btn btn-warning" onclick="editarCeldas()">Editar celdas</button>
+            <button type="button" class="btn btn-danger" onclick="cancelarEdicion()">Cancelar edición</button>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Lunes <button type="button" class="btn btn-danger" onclick="eliminarColumna(1)">X</button></th>
+                  <th>Martes <button type="button" class="btn btn-danger" onclick="eliminarColumna(2)">X</button></th>
+                  <th>Miércoles <button type="button" class="btn btn-danger" onclick="eliminarColumna(3)">X</button></th>
+                  <th>Jueves <button type="button" class="btn btn-danger" onclick="eliminarColumna(4)">X</button></th>
+                  <th>Viernes <button type="button" class="btn btn-danger" onclick="eliminarColumna(5)">X</button></th>
+                  <th>Sábado <button type="button" class="btn btn-danger" onclick="eliminarColumna(6)">X</button></th>
+                  <th>Domingo <button type="button" class="btn btn-danger" onclick="eliminarColumna(7)">X</button></th>
+                </tr>
+              </thead>
+              <tbody id="cuerpoTabla">
+                <tr>
+                  <th>Ejercicio 1</th>
+                  <td>
+                    <select class="form-control" onchange="cambiarEstadoCelda(this)">
+                      <option value="Ejercicios" disabled selected>Ejercicios</option>
+                      <option value="planchas">Planchas</option>
+                      <option value="abdominales">Abdominales</option>
+                      <option value="sentadillas">Sentadillas</option>
+                      <option value="correr">Correr</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control" onchange="cambiarEstadoCelda(this)">
+                      <option value="Ejercicios" disabled selected>Ejercicios</option>
+                      <option value="planchas">Planchas</option>
+                      <option value="abdominales">Abdominales</option>
+                      <option value="sentadillas">Sentadillas</option>
+                      <option value="correr">Correr</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control" onchange="cambiarEstadoCelda(this)">
+                      <option value="Ejercicios" disabled selected>Ejercicios</option>
+                      <option value="planchas">Planchas</option>
+                      <option value="abdominales">Abdominales</option>
+                      <option value="sentadillas">Sentadillas</option>
+                      <option value="correr">Correr</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control" onchange="cambiarEstadoCelda(this)">
+                      <option value="Ejercicios" disabled selected>Ejercicios</option>
+                      <option value="planchas">Planchas</option>
+                      <option value="abdominales">Abdominales</option>
+                      <option value="sentadillas">Sentadillas</option>
+                      <option value="correr">Correr</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control" onchange="cambiarEstadoCelda(this)">
+                      <option value="Ejercicios" disabled selected>Ejercicios</option>
+                      <option value="planchas">Planchas</option>
+                      <option value="abdominales">Abdominales</option>
+                      <option value="sentadillas">Sentadillas</option>
+                      <option value="correr">Correr</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control" onchange="cambiarEstadoCelda(this)">
+                      <option value="Ejercicios" disabled selected>Ejercicios</option>
+                      <option value="planchas">Planchas</option>
+                      <option value="abdominales">Abdominales</option>
+                      <option value="sentadillas">Sentadillas</option>
+                      <option value="correr">Correr</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control" onchange="cambiarEstadoCelda(this)">
+                      <option value="Ejercicios" disabled selected>Ejercicios</option>
+                      <option value="planchas">Planchas</option>
+                      <option value="abdominales">Abdominales</option>
+                      <option value="sentadillas">Sentadillas</option>
+                      <option value="correr">Correr</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+                </div>
+            </div>
+            
+{{>footer}}
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="/js/principal/bootstrap.min.js"></script>
+    <script src="/js/principal/chart.min.js"></script>
+    <script src="/js/principal/bs-init.js"></script>
+    <script src="/js/principal/theme.js"></script>
+    <script src="/js/principal/principal.js"></script>
+</body>
+
+</html>

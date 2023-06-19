@@ -1,0 +1,50 @@
+.contenedor-chanfe-pass{
+    position: relative;
+    height: 500px;
+    background-color: blue;
+}
+
+.password-form {
+    position: absolute;
+    top: 500px;
+    left: 780px;
+    width: 400px;
+    height: 450px;
+    
+    padding: 20px;
+    float: right;
+  }
+  
+  .password-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .password-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .password-form label {
+    margin-bottom: 10px;
+  }
+  
+  .password-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .password-form button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .password-form button[type="submit"]:hover {
+    background-color: #2980b9;
+  }
